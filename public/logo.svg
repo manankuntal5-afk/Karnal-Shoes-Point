@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Drop Shadow for 3D Emblem -->
+    <filter id="badgeShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity="0.65" />
+    </filter>
+    <filter id="glowBlue" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="leatherBevel" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+
+    <!-- Outer Rim Metallic Cream Gradients -->
+    <linearGradient id="rimOuter" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff9f0" />
+      <stop offset="25%" stop-color="#e2d7c5" />
+      <stop offset="50%" stop-color="#b5a995" />
+      <stop offset="75%" stop-color="#ded4c3" />
+      <stop offset="100%" stop-color="#fdf8ef" />
+    </linearGradient>
+
+    <linearGradient id="rimInnerBevel" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#0a0c0e" />
+      <stop offset="50%" stop-color="#2a2e33" />
+      <stop offset="100%" stop-color="#14171a" />
+    </linearGradient>
+
+    <!-- Center Disc Radial Gradient -->
+    <radialGradient id="discBg" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#2d3238" />
+      <stop offset="45%" stop-color="#1b1e22" />
+      <stop offset="85%" stop-color="#101214" />
+      <stop offset="100%" stop-color="#0a0b0d" />
+    </radialGradient>
+
+    <!-- Electric Neon Blue Gradients for K and S -->
+    <linearGradient id="blueMetallic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#93c5fd" />
+      <stop offset="20%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="80%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#67e8f9" />
+      <stop offset="50%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+
+    <!-- Warm Golden-Tan Leather Gradients for Shoe & Letters -->
+    <linearGradient id="goldLeather" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a" />
+      <stop offset="25%" stop-color="#f59e0b" />
+      <stop offset="55%" stop-color="#d97706" />
+      <stop offset="85%" stop-color="#b45309" />
+      <stop offset="100%" stop-color="#78350f" />
+    </linearGradient>
+
+    <linearGradient id="goldHighlight" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#fffbeb" />
+      <stop offset="50%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+
+    <!-- Perforation Dot Pattern for Shoe Leather Texture -->
+    <pattern id="leatherDots" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.9" fill="#78350f" opacity="0.35" />
+      <circle cx="6" cy="6" r="0.9" fill="#78350f" opacity="0.35" />
+      <circle cx="2" cy="2" r="0.6" fill="#fef3c7" opacity="0.25" />
+    </pattern>
+  </defs>
+
+  <!-- Group for entire circular badge -->
+  <g filter="url(#badgeShadow)">
+    <!-- 1. Outer Cream/Silver Rim Ring -->
+    <circle cx="250" cy="250" r="235" fill="url(#rimOuter)" />
+    
+    <!-- Outer Rim Inset Shadow -->
+    <circle cx="250" cy="250" r="226" fill="none" stroke="#6b5e4a" stroke-width="2" opacity="0.6" />
+    
+    <!-- 2. Dark Bevel Rim Step -->
+    <circle cx="250" cy="250" r="222" fill="url(#rimInnerBevel)" stroke="#111" stroke-width="1.5" />
+
+    <!-- 3. Main Dark Textured Disc Plate -->
+    <circle cx="250" cy="250" r="214" fill="url(#discBg)" />
+    
+    <!-- Subtle Inner Rim Highlight -->
+    <circle cx="250" cy="250" r="213" fill="none" stroke="#374151" stroke-width="1.2" opacity="0.5" />
+  </g>
+
+  <!-- ================= CENTRAL 3D K S P MONOGRAM & EMBOSSED SHOE ================= -->
+  <g transform="translate(250, 218)">
+    
+    <!-- 1. LETTER 'K' (Left Side) -->
+    <!-- Vertical Blue Stem with 3D Glossy Chrome -->
+    <g filter="url(#leatherBevel)">
+      <!-- K Vertical Bar 3D Side Shadow -->
+      <path d="M-132 -60 L-106 -60 L-106 58 L-132 58 Z" fill="#0f172a" />
+      <!-- K Vertical Bar Front Face -->
+      <path d="M-130 -58 L-108 -58 L-108 55 L-130 55 Z" fill="url(#blueMetallic)" />
+      <!-- K Top Bevel Highlight -->
+      <path d="M-130 -58 L-108 -58 L-112 -53 L-126 -53 Z" fill="#bae6fd" opacity="0.8" />
+      <line x1="-128" y1="-56" x2="-128" y2="53" stroke="#e0f2fe" stroke-width="1.5" opacity="0.7" />
+    </g>
+
+    <!-- K Upper Diagonal Arm (Golden Leather Texture) -->
+    <g filter="url(#leatherBevel)">
+      <path d="M-106 -10 L-68 -54 L-38 -54 L-84 0 Z" fill="#78350f" />
+      <path d="M-105 -8 L-69 -52 L-42 -52 L-84 0 Z" fill="url(#goldLeather)" />
+      <path d="M-105 -8 L-69 -52 L-42 -52 L-84 0 Z" fill="url(#leatherDots)" />
+      <path d="M-69 -52 L-42 -52" stroke="#fef3c7" stroke-width="2" />
+    </g>
+
+    <!-- K Lower Diagonal Arm (Golden Leather Texture) -->
+    <g filter="url(#leatherBevel)">
+      <path d="M-92 -8 L-42 56 L-72 56 L-108 12 Z" fill="#78350f" />
+      <path d="M-90 -6 L-46 54 L-72 54 L-106 12 Z" fill="url(#goldLeather)" />
+      <path d="M-90 -6 L-46 54 L-72 54 L-106 12 Z" fill="url(#leatherDots)" />
+      <line x1="-46" y1="54" x2="-72" y2="54" stroke="#fef3c7" stroke-width="1.5" />
+    </g>
+
+    <!-- 2. LETTER 'S' (Middle Interlaced Ribbon - Electric Blue) -->
+    <g filter="url(#glowBlue)">
+      <!-- S Lower & Upper Arcs woven through shoe -->
+      <path d="M -30 -62 C 10 -62, 45 -48, 45 -22 C 45 -2, 10 5, -15 15 C -45 28, -45 52, -15 56 C 15 59, 45 46, 50 35 L 32 25 C 26 33, 10 40, -10 38 C -22 36, -22 26, -6 20 C 22 9, 68 2, 68 -24 C 68 -56, 18 -68, -30 -68 Z" fill="#0c4a6e" />
+      <path d="M -28 -60 C 8 -60, 42 -46, 42 -22 C 42 -4, 10 4, -14 14 C -42 26, -42 48, -14 53 C 14 56, 42 44, 46 35 L 34 27 C 28 33, 12 38, -8 36 C -18 35, -18 27, -6 22 C 22 11, 64 4, 64 -22 C 64 -52, 18 -64, -28 -64 Z" fill="url(#blueMetallic)" />
+      <!-- S Gloss Highlight -->
+      <path d="M -26 -61 C 6 -61, 38 -48, 38 -22" fill="none" stroke="#bae6fd" stroke-width="2.5" stroke-linecap="round" opacity="0.85" />
+    </g>
+
+    <!-- 3. LETTER 'P' (Right Side - Golden Leather Texture) -->
+    <g filter="url(#leatherBevel)">
+      <!-- P Vertical Stem -->
+      <path d="M 52 -58 L 76 -58 L 76 56 L 52 56 Z" fill="#78350f" />
+      <path d="M 54 -56 L 74 -56 L 74 54 L 54 54 Z" fill="url(#goldLeather)" />
+      <path d="M 54 -56 L 74 -56 L 74 54 L 54 54 Z" fill="url(#leatherDots)" />
+      <line x1="56" y1="-54" x2="56" y2="52" stroke="#fef3c7" stroke-width="1.5" opacity="0.6" />
+
+      <!-- P Loop -->
+      <path d="M 74 -58 C 115 -58, 136 -42, 136 -14 C 136 14, 114 26, 74 26 L 74 6 C 100 6, 112 -2, 112 -14 C 112 -26, 100 -38, 74 -38 Z" fill="#78350f" />
+      <path d="M 74 -56 C 112 -56, 132 -40, 132 -14 C 132 12, 112 24, 74 24 L 74 8 C 98 8, 110 0, 110 -14 C 110 -24, 98 -36, 74 -36 Z" fill="url(#goldLeather)" />
+      <path d="M 74 -56 C 112 -56, 132 -40, 132 -14 C 132 12, 112 24, 74 24 L 74 8 C 98 8, 110 0, 110 -14 C 110 -24, 98 -36, 74 -36 Z" fill="url(#leatherDots)" />
+      <path d="M 76 -54 C 110 -54, 128 -38, 128 -14" fill="none" stroke="#fef3c7" stroke-width="2" opacity="0.75" />
+    </g>
+
+    <!-- 4. DYNAMIC LEAPING ATHLETIC SHOE (Golden Leather with Speed Trails) -->
+    <!-- Heel Motion Speed Streaks Behind Shoe -->
+    <g opacity="0.95">
+      <path d="M 80 -105 L 126 -112 L 88 -98 Z" fill="url(#goldHighlight)" />
+      <path d="M 74 -92 L 138 -98 L 84 -85 Z" fill="url(#goldHighlight)" />
+      <path d="M 82 -78 L 122 -82 L 90 -72 Z" fill="url(#goldHighlight)" />
+    </g>
+
+    <!-- Main Leaping Sneaker Body -->
+    <g filter="url(#leatherBevel)">
+      <!-- Shoe Bottom Sole Drop Shadow -->
+      <path d="M -115 54 C -95 44, -50 20, -10 -5 C 25 -28, 65 -65, 95 -95 C 102 -102, 112 -96, 105 -86 C 88 -62, 55 -30, 20 0 C -20 34, -70 58, -105 58 Z" fill="#451a03" />
+
+      <!-- Outsole (Clean White & Cream Cushion Sole) -->
+      <path d="M -112 50 C -92 40, -48 18, -8 -6 C 26 -30, 64 -64, 92 -92 C 98 -98, 105 -94, 100 -86 C 84 -64, 52 -32, 18 -2 C -22 32, -68 54, -102 54 Z" fill="#fffbeb" stroke="#d4af37" stroke-width="1.2" />
+
+      <!-- Midsole Grip Texture -->
+      <path d="M -95 44 L -92 48 M -75 34 L -72 38 M -55 22 L -52 26 M -35 10 L -32 14 M -15 -2 L -12 2 M 10 -18 L 14 -14 M 35 -36 L 39 -32 M 60 -56 L 64 -52" stroke="#b45309" stroke-width="1.8" stroke-linecap="round" />
+
+      <!-- Sneaker Leather Upper -->
+      <path d="M -110 46 C -116 38, -112 28, -98 16 C -82 4, -58 -10, -32 -30 C -20 -40, -12 -58, -10 -72 C -8 -78, -2 -80, 4 -72 C 12 -62, 22 -68, 32 -78 C 38 -84, 46 -80, 44 -72 C 40 -56, 56 -52, 70 -62 C 82 -74, 92 -88, 96 -90 C 99 -92, 102 -88, 98 -82 C 86 -62, 60 -36, 26 -10 C -10 16, -55 40, -100 50 Z" fill="url(#goldLeather)" stroke="#78350f" stroke-width="1.5" />
+
+      <!-- Perforated Leather Dots on Shoe -->
+      <path d="M -110 46 C -116 38, -112 28, -98 16 C -82 4, -58 -10, -32 -30 C -20 -40, -12 -58, -10 -72 C -8 -78, -2 -80, 4 -72 C 12 -62, 22 -68, 32 -78 C 38 -84, 46 -80, 44 -72 C 40 -56, 56 -52, 70 -62 C 82 -74, 92 -88, 96 -90 C 99 -92, 102 -88, 98 -82 C 86 -62, 60 -36, 26 -10 C -10 16, -55 40, -100 50 Z" fill="url(#leatherDots)" />
+
+      <!-- Collar & Tongue Padding -->
+      <path d="M -10 -72 C -6 -88, 6 -88, 12 -75 C 16 -66, 8 -62, -2 -64 Z" fill="#fbbf24" stroke="#78350f" stroke-width="1" />
+      <path d="M 24 -75 C 30 -90, 42 -90, 46 -76 C 48 -68, 40 -64, 30 -66 Z" fill="#fbbf24" stroke="#78350f" stroke-width="1" />
+
+      <!-- Leather Stitching Lines along Shoe Contour -->
+      <path d="M -104 38 C -90 28, -50 8, -16 -12 C 16 -32, 52 -60, 84 -82" fill="none" stroke="#fef3c7" stroke-width="1.6" stroke-dasharray="3,3" opacity="0.85" />
+      <path d="M -94 28 C -70 12, -35 -4, -2 -22 C 28 -40, 58 -64, 76 -74" fill="none" stroke="#78350f" stroke-width="1.2" stroke-dasharray="2,2" opacity="0.7" />
+
+      <!-- Aerodynamic Swoop Ridge -->
+      <path d="M -92 24 C -60 14, -20 -2, 12 -22 C 42 -42, 68 -66, 86 -84" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.9" />
+    </g>
+  </g>
+
+  <!-- ================= BOTTOM STORE NAME: "KARNAL SHOES POINT" ================= -->
+  <!-- Curving Along Bottom Rim / High Contrast Crisp Bold All-Caps Sans-Serif -->
+  <g transform="translate(250, 390)">
+    <!-- Subtitle Glow/Shadow -->
+    <text 
+      x="0" 
+      y="0" 
+      text-anchor="middle" 
+      fill="#050608" 
+      font-family="'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" 
+      font-size="28" 
+      font-weight="900" 
+      letter-spacing="2.5"
+      dy="2"
+    >
+      KARNAL SHOES POINT
+    </text>
+    <!-- Crisp Solid White Text Exactly as Uploaded in User Logo -->
+    <text 
+      x="0" 
+      y="0" 
+      text-anchor="middle" 
+      fill="#ffffff" 
+      font-family="'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" 
+      font-size="28" 
+      font-weight="900" 
+      letter-spacing="2.5"
+    >
+      KARNAL SHOES POINT
+    </text>
+  </g>
+
+  <!-- Sparkle Accent on Rim Edge (Matching Studio Lighting in Photo) -->
+  <g transform="translate(438, 438)">
+    <path d="M 0 -12 Q 0 0 -12 0 Q 0 0 0 12 Q 0 0 12 0 Q 0 0 0 -12 Z" fill="#ffffff" opacity="0.85" />
+    <circle cx="0" cy="0" r="2.5" fill="#ffffff" />
+  </g>
+</svg>

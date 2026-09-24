@@ -1,0 +1,6 @@
+{
+  "name": "Karnal Shoes Point",
+  "description": "Official online store for Karnal Shoes Point. Premium athletic footwear, running shoes, flat Rs 389 deal, 2-pairs combo for Rs 700 with free delivery across India, instant UPI payments, and digital tax invoice.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
